@@ -8,8 +8,8 @@ router.post("/add", UsuarioController.add);
 router.get("/lst", UsuarioController.lst);
 router.post("/lst", UsuarioController.filtro);
 
-router.get("/edt", UsuarioController.abreedt);
-router.post("/edt", UsuarioController.edt);
+router.get("/edt/:id", UsuarioController.abreedt);
+router.post("/edt/:id", UsuarioController.edt);
 
 router.get("/del/:id", UsuarioController.deleta);
 
