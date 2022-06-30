@@ -1,4 +1,18 @@
 <%-include('../cabecalho.ejs')%>
-
-
+    <form method="post" enctype="multipart/form-data">
+        Id: <input type="text" name="id"
+            value="<%=Usuario._id%>" required readonly><br>
+        Nome: <input type="text" name="nome"
+            placeholder="Digite seu Nome"
+            value="<%=Usuario.nome%>" required><br>
+        Email: <input type="email" name="email"
+            placeholder="Digite seu Email"
+            value="<%=Usuario.email%>" required><br>
+        Senha: <input type="password" name="senha"
+            placeholder="Digite sua Senha"
+            value="<%=Usuario.nome%>" required><br>
+        Foto: <input type="file" name="foto"
+            accept="image/*"><br>
+        <input type="submit" value="Salvar">
+    </form>
 <%-include('../rodape.ejs')%>
